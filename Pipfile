@@ -1,0 +1,26 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+flask = "*"
+flask-restful = "*"
+ipython = "*"
+ipdb = "*"
+flask-shell-ipython = "*"
+pytest-flask = "*"
+flake8 = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-runner = "*"
+Faker = "*"
+
+pymongo = "*"
+flask-mongoengine = "*"
+mongoengine = "*"
+
+[requires]
+python_version = "3.5"
