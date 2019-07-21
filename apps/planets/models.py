@@ -24,8 +24,8 @@ class Mixin(db.Document):
         'ordering': ['created']
     }
 
-    created = DateTimeField(default=datetime.now)
-    update = DateTimeField(default=datetime.utcnow)
+    created_at = DateTimeField(default=datetime.now)
+    updated_at = DateTimeField(default=datetime.utcnow)
 
 # Abaixo fica o código para a classe Adress
 
@@ -38,6 +38,6 @@ class Planet(Mixin):
     '''
     meta = {'collection': 'planets'}
 
-    name = StringField(max_length=200, required=True)
+    name = StringField(max_length=200, unique=True, required=True)
     terrain = StringField(max_length=200, default='unknown')
     climate = StringField(max_length=200, default='unknown')

@@ -9,27 +9,21 @@ verify_ssl = true
 flask = "*"
 flask-restful = "*"
 python-dotenv = "*"
-
 ipython = "*"
 ipdb = "*"
 flask-shell-ipython = "*"
 isort = "*"
-
 pytest-flask = "*"
 flake8 = "*"
 pytest = "*"
 pytest-cov = "*"
 pytest-runner = "*"
 Faker = "*"
-
-
 pymongo = "*"
 flask-mongoengine = "*"
 mongoengine = "*"
-
-
 gunicorn = "*"
-
+marshmallow = "*"
 
 [requires]
 python_version = "3.5"
