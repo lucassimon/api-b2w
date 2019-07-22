@@ -27,15 +27,8 @@ class Mixin(db.Document):
     created_at = DateTimeField(default=datetime.now)
     updated_at = DateTimeField(default=datetime.utcnow)
 
-# Abaixo fica o código para a classe Adress
-
-# Abaixo fica o código para a classe User
-
 
 class Planet(Mixin):
-    '''
-    Plantes
-    '''
     meta = {'collection': 'planets'}
 
     name = StringField(max_length=200, unique=True, required=True)
